@@ -76,8 +76,8 @@ class Author:
         return self._name
 
     @name.setter
-    def name(self):
-        return self._name
+    def name(self, value):
+        pass  
 
     def articles(self):
         return [article for article in Article.all if article.author == self]
